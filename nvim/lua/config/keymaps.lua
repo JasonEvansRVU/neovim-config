@@ -70,3 +70,7 @@ vim.keymap.set("n", "<leader>gtest", ':lua require("neotest").run.run()<CR>', { 
 -- Oil.nvim keymaps
 vim.keymap.set("n", "<leader>-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
+-- ==== LSP Keymaps ====
+vim.keymap.set("n", "<leader>th", function()
+  vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+end, { desc = "Toggle inlay hints" })
