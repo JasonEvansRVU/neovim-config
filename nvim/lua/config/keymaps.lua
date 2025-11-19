@@ -66,3 +66,7 @@ vim.keymap.set("n", "<leader>do", miniDiff.toggle_overlay, { noremap = true, des
 
 -- Run golang tests
 vim.keymap.set("n", "<leader>gtest", ':lua require("neotest").run.run()<CR>', { desc = "Run test" })
+
+-- Oil.nvim keymaps
+vim.keymap.set("n", "<leader>-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
